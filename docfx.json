@@ -1,14 +1,224 @@
 {
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "**.csproj",
+            "**.fsproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ],
+          "src": "../../Spreads/Spreads/src"
+        }
+      ],
+      "dest": "spreads/api",
+      "filter": "../../Spreads/Spreads/docs/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "properties": {
+        "TargetFramework": "netstandard2.0"
+      }
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ],
+          "src": "../../Spreads/Spreads.Native/dotnet/src"
+        }
+      ],
+      "dest": "spreads/libs/native/api",
+      "filter": "../../Spreads/Spreads.Native/dotnet/docs/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "properties": {
+        "TargetFramework": "netstandard2.0"
+      }
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ],
+          "src": "../../Spreads/Spreads.LMDB/src"
+        }
+      ],
+      "dest": "spreads/libs/lmdb/api",
+      "filter": "../../Spreads/Spreads.LMDB/docs/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "properties": {
+        "TargetFramework": "netstandard2.0"
+      }
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ],
+          "src": "../../Spreads/Spreads.SQLite/src"
+        }
+      ],
+      "dest": "spreads/libs/sqlite/api",
+      "filter": "../../Spreads/Spreads.SQLite/docs/filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "properties": {
+        "TargetFramework": "netstandard2.0"
+      }
+    }
+  ],
   "build": {
     "content": [
+      {
+        "files": [
+          "api/**.yml"
+        ],
+        "src": "spreads/",
+        "dest": "spreads/"
+      },
+      {
+        "files": [
+          "api/index.md"
+        ],
+        "src": "../../Spreads/Spreads/docs/",
+        "dest": "spreads/"
+      },
       {
         "files": [
           "articles/**.md",
           "articles/**/toc.yml",
           "toc.yml",
           "*.md"
-        ]
+        ],
+        "src": "../../Spreads/Spreads/docs/",
+        "dest": "spreads/"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "spreads/",
+        "dest": "spreads/"
+      },
+      {
+        "files": [
+          "*.md"
+        ],
+        "src": "spreads/libs/",
+        "dest": "spreads/libs/"
+      },
+
+
+      {
+        "files": [
+          "api/**.yml"
+        ],
+        "src": "spreads/libs/native/",
+        "dest": "spreads/libs/native/"
+      },
+      {
+        "files": [
+          "README.md"
+        ],
+        "src": "../../Spreads/Spreads.Native/",
+        "dest": "spreads/libs/native/api/"
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ],
+        "src": "../../Spreads/Spreads.Native/dotnet/docs/",
+        "dest": "spreads/libs/native/"
+      },
+
+
+      {
+        "files": [
+          "api/**.yml"
+        ],
+        "src": "spreads/libs/lmdb/",
+        "dest": "spreads/libs/lmdb/"
+      },
+      {
+        "files": [
+          "README.md"
+        ],
+        "src": "../../Spreads/Spreads.LMDB/",
+        "dest": "spreads/libs/lmdb/api/"
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ],
+        "src": "../../Spreads/Spreads.LMDB/docs/",
+        "dest": "spreads/libs/lmdb/"
+      },
+
+
+
+
+      {
+        "files": [
+          "api/**.yml"
+        ],
+        "src": "spreads/libs/sqlite/",
+        "dest": "spreads/libs/sqlite/"
+      },
+      {
+        "files": [
+          "README.md"
+        ],
+        "src": "../../Spreads/Spreads.SQLite/",
+        "dest": "spreads/libs/sqlite/api/"
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ],
+        "src": "../../Spreads/Spreads.SQLite/docs/",
+        "dest": "spreads/libs/sqlite/"
+      },
+
+
+
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ],
+        "exlude": ["README.md"]
       }
+
     ],
     "resource": [
       {
@@ -17,6 +227,12 @@
         ]
       }
     ],
+    "globalMetadata": {
+      "_appTitle": "DataSpreads! documentation",
+      "_gitContribute": {
+        "apiSpecFolder": "docs/apidocs"
+      }
+    },
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],

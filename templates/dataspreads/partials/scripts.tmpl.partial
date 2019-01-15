@@ -13,4 +13,4 @@ gtag('js', new Date());
 gtag('config', 'UA-132456873-1');
 </script>
 
-<script id="dsq-count-scr" src="//docs-dataspreads-io.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="//dataspreads-documentation.disqus.com/count.js" async></script>

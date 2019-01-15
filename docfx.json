@@ -231,6 +231,7 @@
       "_appTitle": "DataSpreads! documentation",
       "_appFooter": "<span>Copyright © 2014-2019 DataSpreads.io</span>",
       "_appLogoPath": "images/logo.svg",
+      "_appHeroLogoPath": "images/DataSpreads_450_64.png",
       "_appFaviconPath": "images/favicon.ico",
       "_gitContribute": {
         "apiSpecFolder": "docs/apidocs"

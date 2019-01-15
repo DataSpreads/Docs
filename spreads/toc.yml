@@ -1,0 +1,18 @@
+- name: Tutorials
+  href: ../../../Spreads/Spreads/docs/articles/toc.yml
+  topicHref: ../../../Spreads/Spreads/docs/articles/intro.md
+- name: Spreads API
+  href: api/toc.yml
+  topicHref: ../../../Spreads/Spreads/docs/api/index.md
+- name: Libraries
+  topicHref: libs/index.md
+  items:
+  - name: Spreads.Native
+    href: libs/native/api/toc.yml
+    topicHref: ../../../Spreads/Spreads.Native/README.md
+  - name: Spreads.LMDB
+    href: libs/lmdb/api/toc.yml
+    topicHref: ../../../Spreads/Spreads.LMDB/README.md
+  - name: Spreads.SQLite
+    href: libs/sqlite/api/toc.yml
+    topicHref: ../../../Spreads/Spreads.SQLite/README.md

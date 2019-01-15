@@ -106,7 +106,7 @@ button, a, .btn-primary {
       font-weight: 400;
       font-family: Rockwell;
   }
-  .hero .text {
+  .hero .hero_logo {
       font-size: 64px;
       text-align: center;
   }
@@ -115,8 +115,20 @@ button, a, .btn-primary {
       text-align: center;
       font-family: Candara;
   }
+  .hero_logo {
+      max-width:100%;
+      max-height:100%;
+  }
+  #hero_logo {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+  .minitext {
+    margin-top: 20px;
+  }
   .buttons-unit {
-      margin-top: 60px;
+      margin-top: 40px;
       text-align: center;
   }
   .hero .button {

@@ -10,8 +10,8 @@ footer{
 
 <div class="hero">
   <div class="wrap">
-    <div class="text">
-      <img id="hero_logo" src="images/DataSpreads_675_96.png" alt="DataSpreads!">
+    <div class="hero_logo">
+      <img id="hero_logo" src="images/DataSpreads_450_64.png" alt="DataSpreads!">
     </div>
     <div class="minitext">
         <strong>An ultra-fast edge platform for accessible authentic affordable real-time data that you securely own and share.</strong>

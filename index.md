@@ -1,5 +1,5 @@
 ---
-title: Welcome!
+title: Welcome
 documentType: index
 ---
 <style type="text/css">
